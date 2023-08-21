@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TicTacToe</title>
+    <style>
+        .container {
+            max-width: 650px;
+            margin: 0 auto;
+            height: 100vh;
+        }
+
+        button {
+            flex: 1 0 calc(33.33% - 20px);
+            max-width: 1 0 calc(33.33% - 20px);
+            background-color: transparent;
+            border: none;
+        }
+
+        button img {
+            width: 100%;
+            height: auto;
+        }
+
+        .button-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body style="background-color:rgb(216, 150, 17);">
+    <div class="container">
+        <p style="font-size: 50px; font-weight: bold; text-decoration: underline; text-align: center;">Tic-Tac-Toe</p>
+        <p> X plays first</p>
+        
+        <div class="button-grid">
+            <button class="myButton" data-value=0><img src="images/empty_square.png"></button>
+            <button class="myButton" data-value=1><img src="images/empty_square.png"></button>
+            <button class="myButton" data-value=2><img src="images/empty_square.png"></button>
+            <button class="myButton" data-value=3><img src="images/empty_square.png"></button>
+            <button class="myButton" data-value=4><img src="images/empty_square.png"></button>
+            <button class="myButton" data-value=5><img src="images/empty_square.png"></button>
+            <button class="myButton" data-value=6><img src="images/empty_square.png"></button>
+            <button class="myButton" data-value=7><img src="images/empty_square.png"></button>
+            <button class="myButton" data-value=8><img src="images/empty_square.png"></button>
+        </div>
+        
+        <p id="gameEndMessage" style="font-size: 40px; font-weight: bold;"> </p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
